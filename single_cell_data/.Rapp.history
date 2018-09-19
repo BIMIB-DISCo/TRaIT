@@ -1,0 +1,53 @@
+load("/Users/daniele/Documents/BIMIB/TRaIT/single/dataset_Navin_TNBC.RData")
+ls()
+dataset_Navin_TNBC = dataset_navin_TNBC
+save(dataset_Navin_TNBC,file="dataset_Navin_TNBC.RData")
+# install the required libraries#
+#
+# TRONCO#
+if (!require("TRONCO")) {#
+    source("https://bioconductor.org/biocLite.R")#
+    biocLite("TRONCO")#
+    library("TRONCO")#
+}#
+#
+# oncoNEM#
+if (!require("oncoNEM")) {#
+	library("devtools")#
+	install_bitbucket("edith_ross/oncoNEM")#
+	library("oncoNEM")#
+}
+library("devtools")
+install_bitbucket("edith_ross/oncoNEM")
+options(scipen = 999)#
+#
+#load dataset#
+load("dataset_Navin_TNBC.RData")
+ls()
+head(dataset_Navin_TNBC)
+options(scipen = 999)#
+#
+#load dataset#
+load("dataset_Navin_TNBC.RData")#
+head(dataset_Navin_TNBC)#
+#
+# perform the inference with TRaIT Edmonds#
+source('TRaIT.R')
+# load dataset#
+load("dataset_Navin_TNBC.RData")#
+head(dataset_Navin_TNBC)
+# perform the analysis by OncoNEM#
+source('OncoNEM.R')
+# install the TRONCO library if required#
+if (!require("TRONCO")) {#
+    source("https://bioconductor.org/biocLite.R")#
+    biocLite("TRONCO")#
+    library("TRONCO")#
+}#
+#
+# load the data#
+load("dataset_Navin_TNBC.RData")#
+head(dataset_Navin_TNBC)#
+#
+# perform the analysis by TRaIT Edmonds#
+source('TRaIT.R')
