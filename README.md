@@ -1,5 +1,5 @@
 # TRaIT (Temporal oRder of Individual Tumors)
-R implementation to reproduce the case studies presented in the TRaIT framework. Preprint of the paper available at: https://www.biorxiv.org/content/early/2017/09/04/132183. 
+R implementation to reproduce the case studies presented in the TRaIT framework. Paper published on BMC Bioinformatics and available at: https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2795-4. 
 
 TRaIT is a computational framework to infer mutational graphs that model the accumulation of multiple types of somatic alterations driving tumour evolution and is part of the TRONCO (TRanslational ONCOlogy) R package (https://github.com/BIMIB-DISCo/TRONCO). 
 
