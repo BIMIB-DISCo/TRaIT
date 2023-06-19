@@ -6,3 +6,5 @@ TRaIT is a computational framework to infer mutational graphs that model the acc
 An example of usage of the tool is provided both for single-cell sequencing data (original paper: https://www.ncbi.nlm.nih.gov/pubmed/25079324) and multi-region sequencing data (original paper: https://www.ncbi.nlm.nih.gov/pubmed/27023146). To execute the code, please run the main.R scripts in the two directories single_cell_data and multi_region_data. We recall that those data are provided as examples and to reproduce the results presented in the TRaIT paper, therefore should not be used in place of the ones provided in the respective publications. 
 
 For further details, we refer to the main Github repository of the TRONCO R package at https://github.com/BIMIB-DISCo/TRONCO. 
+
+Please feel free to contact us if you have problems running our tool at daniele.ramazzotti@unimib.it
